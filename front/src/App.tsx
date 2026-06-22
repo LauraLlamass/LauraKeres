@@ -1,23 +1,28 @@
-import Footer from './components/Footer.jsx'
-import Navbar from './components/Navbar.jsx'
-import './App.css'
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
+import HomePage from './pages/HomePage'
+import NotFoundPage from './pages/NotFoundPage'
+import ProjectsPage from './pages/ProjectsPage'
 
 function App() {
+  const path = window.location.pathname
+  const Page =
+    path === '/'
+      ? HomePage
+      : path === '/proyectos'
+        ? ProjectsPage
+        : path === '/sobre-mi'
+          ? AboutPage
+          : path === '/contacto'
+            ? ContactPage
+            : NotFoundPage
+
   return (
-    <div className="app">
+    <div className="flex min-h-svh flex-col">
       <Navbar />
-
-      <main className="app-main">
-        <section className="starter-section">
-          <p className="eyebrow">LauraKeres</p>
-          <h1>Base lista para empezar</h1>
-          <p>
-            Edita esta pantalla desde <code>src/App.tsx</code> y construye tu
-            proyecto a partir de aqui.
-          </p>
-        </section>
-      </main>
-
+      <Page />
       <Footer />
     </div>
   )
