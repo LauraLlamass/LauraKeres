@@ -15,7 +15,6 @@ type HelpSectionProps = {
 
 function HelpSection({
   cta,
-  eyebrow,
   imageAlt,
   imageSrc,
   text,
@@ -26,10 +25,7 @@ function HelpSection({
       <ImageBlock alt={imageAlt} src={imageSrc} />
 
       <div>
-        <p className="mb-3 text-sm font-bold uppercase">
-          {eyebrow}
-        </p>
-        <h2 className="font-serif text-6xl leading-none max-[540px]:text-4xl">
+        <h2 className="font-serif text-4xl leading-none max-[540px]:text-4xl">
           {title}
         </h2>
         <p className="mt-5 text-lg leading-8">

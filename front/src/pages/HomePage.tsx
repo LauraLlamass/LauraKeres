@@ -1,14 +1,10 @@
-import ContactSection from '../components/home/ContactSection'
 import ContextSection from '../components/home/ContextSection'
 import HelpSection from '../components/home/HelpSection'
 import HeroSection from '../components/home/HeroSection'
-import ServicesSection from '../components/home/ServicesSection'
 import {
-  contactContent,
   contextContent,
   helpContent,
   heroContent,
-  services,
   workingImage,
 } from '../data/homeContent'
 
@@ -26,8 +22,6 @@ function HomePage() {
         imageAlt="Proceso creativo de LauraKeres"
         imageSrc={workingImage}
       />
-      <ServicesSection imageSrc={workingImage} services={services} />
-      <ContactSection {...contactContent} />
     </main>
   )
 }

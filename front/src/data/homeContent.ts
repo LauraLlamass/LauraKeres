@@ -19,11 +19,11 @@ export const contextContent = {
 
 export const helpContent = {
   eyebrow: 'Ithesia',
-  title: 'Una imagen que hable antes que el texto',
-  text: 'Ordenamos referencias, paleta, tipografia y composicion para que tu proyecto tenga una lectura inmediata y una memoria visual cuidada.',
+  title: 'De la emoción a un reino',
+  text: 'Descubre los cinco reinos que componen Ithesia y mucho más',
   cta: {
-    label: 'Hablemos',
-    href: '#contacto',
+    label: 'Entrar en Ithesia',
+    href: '/proyectos',
   },
 }
 
