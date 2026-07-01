@@ -3,7 +3,7 @@ export const ithesiaHero = {
   title: 'Saga Ithesia',
   text: 'Cuando el nombre olvidado despierta, el legado comienza.',
   cta: {
-    label: 'Hija del eco',
+    label: 'Descubrir La hija del eco',
     href: '/proyectos/ithesia/la-hija-del-eco',
   },
   images: [
@@ -24,55 +24,33 @@ export const ithesiaHero = {
 
 export const ithesiaBooks = {
   title: 'Los libros de Ithesia',
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sapien sed lorem gravida.',
+  text: 'Ithesia es una saga de cuatro libros. La hija del eco, su primera entrega, cuenta con el manuscrito completo; Proyecto Aurven se encuentra actualmente en escritura.',
   books: [
     {
-      title: 'La Hija del Eco',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      title: 'Libro I · La hija del eco',
+      description:
+        'Una princesa sin reino. Una promesa dormida. Una herencia que arde bajo la piel.',
       longDescription: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'Micaela siempre supo cuál era su lugar: hija mayor del reino de Ebronsel, futura esposa de alguien a quien no ama, una pieza más en un juego político. Pero cuando las fronteras del mundo se resquebrajan —y con ellas, su identidad—, se ve arrastrada a un legado que no pidió… pero que clama por ella.',
+        'Criaturas de sombras y una verdad enterrada bajo el silencio de una madre. A medida que las máscaras caen y las voces del pasado regresan, Micaela deberá decidir quién es: lo que el mundo espera… o lo que arde dentro.',
       ],
       image: '/portadaIthesia.png',
+      status: 'Manuscrito completo',
       cta: {
-        label: 'Entrar al libro',
+        label: 'Descubrir La hija del eco',
         href: '/proyectos/ithesia/la-hija-del-eco',
       },
     },
     {
-      title: 'Proyecto Aurven',
+      title: 'Libro II · Proyecto Aurven',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       longDescription: [
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       ],
-      status: 'Portada provisional',
+      status: 'En escritura',
       cta: {
-        label: 'Entrar al libro',
+        label: 'Descubrir Proyecto Aurven',
         href: '/proyectos/ithesia/libro-dos',
-      },
-    },
-    {
-      title: 'Proyecto Laconia',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      longDescription: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      ],
-      status: 'Portada provisional',
-      cta: {
-        label: 'Entrar al libro',
-        href: '/proyectos/ithesia/libro-tres',
-      },
-    },
-    {
-      title: 'Proyecto Altea',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      longDescription: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      ],
-      status: 'Portada provisional',
-      cta: {
-        label: 'Entrar al libro',
-        href: '/proyectos/ithesia/libro-cuatro',
       },
     },
   ],
@@ -109,7 +87,7 @@ export const ithesiaStories = {
       label: 'Isla de la Academia',
     },
   ],
-  title: '¿Te atreves a adentrarte en los reinos de Ithesia?',
+  title: 'Los reinos que dan forma a Ithesia',
 }
 
 export const ithesiaHighlight = {
@@ -132,13 +110,4 @@ export const ithesiaHighlight = {
       label: 'Tercera ilustración destacada',
     },
   ],
-}
-
-export const ithesiaCta = {
-  title: 'Lorem ipsum dolor sit amet',
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem vel sapien consequat.',
-  cta: {
-    label: 'Lorem ipsum',
-    href: '/contacto',
-  },
 }

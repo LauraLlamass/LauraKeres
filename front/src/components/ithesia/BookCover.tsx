@@ -7,12 +7,17 @@ type BookCoverProps = {
 function BookCover({ image, status, title }: BookCoverProps) {
   if (image) {
     return (
-      <div className="aspect-[141/200] overflow-hidden rounded-xl bg-leather">
+      <div className="relative aspect-[141/200] overflow-hidden rounded-xl bg-leather">
         <img
           alt={`Portada de ${title}`}
           className="h-full w-full object-cover"
           src={image}
         />
+        {status && (
+          <span className="absolute left-1/2 top-3 -translate-x-1/2 whitespace-nowrap rounded-full bg-paper px-3 py-1 text-xs font-bold uppercase tracking-wide text-leather shadow-sm">
+            {status}
+          </span>
+        )}
       </div>
     )
   }
@@ -23,10 +28,12 @@ function BookCover({ image, status, title }: BookCoverProps) {
         aria-hidden="true"
         className="absolute inset-3 rounded-lg border border-sage"
       />
-      <p className="relative text-xs font-bold uppercase tracking-[0.2em] text-sage">
-        {status}
-      </p>
-      <p className="relative mt-5 font-serif text-2xl leading-tight">{title}</p>
+      {status && (
+        <span className="absolute left-1/2 top-3 -translate-x-1/2 whitespace-nowrap rounded-full bg-paper px-3 py-1 text-xs font-bold uppercase tracking-wide text-leather shadow-sm">
+          {status}
+        </span>
+      )}
+      <p className="relative font-serif text-2xl leading-tight">{title}</p>
       <span
         aria-hidden="true"
         className="relative mt-6 h-px w-12 bg-sage"

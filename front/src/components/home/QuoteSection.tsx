@@ -1,9 +1,9 @@
-type ContextSectionProps = {
+type QuoteSectionProps = {
   quote: string
   source: string
 }
 
-function ContextSection({ quote, source }: ContextSectionProps) {
+function QuoteSection({ quote, source }: QuoteSectionProps) {
   return (
     <section className="bg-sage text-center" id="sobre-mi">
       <div className="mx-auto grid w-[min(1120px,100%)] justify-items-center px-6 py-16 max-[820px]:py-12">
@@ -18,4 +18,4 @@ function ContextSection({ quote, source }: ContextSectionProps) {
   )
 }
 
-export default ContextSection
+export default QuoteSection

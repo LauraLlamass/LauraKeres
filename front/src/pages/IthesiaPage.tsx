@@ -1,11 +1,9 @@
 import BooksSection from '../components/ithesia/BooksSection'
-import HighlightSection from '../components/ithesia/HighlightSection'
-import IthesiaCta from '../components/ithesia/IthesiaCta'
+import CharacterSection from '../components/ithesia/CharacterSection'
 import IthesiaHero from '../components/ithesia/IthesiaHero'
-import StoriesSection from '../components/ithesia/StoriesSection'
+import KingdomsSection from '../components/ithesia/KingdomsSection'
 import {
   ithesiaBooks,
-  ithesiaCta,
   ithesiaHero,
   ithesiaHighlight,
   ithesiaStories,
@@ -18,9 +16,8 @@ function IthesiaPage() {
       <div id="libros">
         <BooksSection {...ithesiaBooks} />
       </div>
-      <StoriesSection {...ithesiaStories} />
-      <HighlightSection {...ithesiaHighlight} />
-      <IthesiaCta {...ithesiaCta} />
+      <KingdomsSection {...ithesiaStories} />
+      <CharacterSection {...ithesiaHighlight} />
     </main>
   )
 }

@@ -1,6 +1,7 @@
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import AboutPage from './pages/AboutPage'
+import AnthologyPage from './pages/AnthologyPage'
 import ContactPage from './pages/ContactPage'
 import HomePage from './pages/HomePage'
 import IthesiaBookPage from './pages/IthesiaBookPage'
@@ -17,6 +18,8 @@ function App() {
         ? IthesiaBookPage
         : path === '/proyectos/ithesia'
           ? IthesiaPage
+          : path === '/proyectos/relatos'
+            ? AnthologyPage
           : path === '/proyectos'
             ? ProjectsPage
             : path === '/sobre-mi'

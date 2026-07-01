@@ -1,5 +1,5 @@
 import ButtonLink from '../ButtonLink'
-import VisualPanel from './VisualPanel'
+import ImagePanel from './ImagePanel'
 
 type IthesiaHeroProps = {
   cta: {
@@ -29,17 +29,17 @@ function IthesiaHero({ cta, images, text, title }: IthesiaHeroProps) {
       </div>
 
       <div className="grid min-h-[480px] grid-cols-[1.15fr_0.85fr] gap-5 max-[540px]:min-h-[380px]">
-        <VisualPanel
+        <ImagePanel
           className="row-span-2"
           image={images[0].image}
           label={images[0].label}
         />
-        <VisualPanel
+        <ImagePanel
           image={images[1].image}
           label={images[1].label}
           variant="parchment"
         />
-        <VisualPanel
+        <ImagePanel
           image={images[2].image}
           label={images[2].label}
           variant="sage"

@@ -1,16 +1,16 @@
-type VisualPanelProps = {
+type ImagePanelProps = {
   className?: string
   image: string
   label: string
   variant?: 'leather' | 'parchment' | 'sage'
 }
 
-function VisualPanel({
+function ImagePanel({
   className = '',
   image,
   label,
   variant = 'leather',
-}: VisualPanelProps) {
+}: ImagePanelProps) {
   const background = {
     leather: 'bg-leather',
     parchment: 'bg-parchment',
@@ -32,4 +32,4 @@ function VisualPanel({
   )
 }
 
-export default VisualPanel
+export default ImagePanel

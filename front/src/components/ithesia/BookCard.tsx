@@ -6,7 +6,6 @@ type BookCardProps = {
     href: string
     label: string
   }
-  description: string
   image?: string
   status?: string
   title: string
@@ -14,18 +13,23 @@ type BookCardProps = {
 
 function BookCard({
   cta,
-  description,
   image,
   status,
   title,
 }: BookCardProps) {
   return (
-    <article className="flex flex-col">
-      <BookCover image={image} status={status} title={title} />
-      <h3 className="mt-5 font-serif text-xl leading-8">{title}</h3>
-      <p className="mt-2 flex-1 leading-7">{description}</p>
-      <div className="mt-5">
-        <ButtonLink href={cta.href}>{cta.label}</ButtonLink>
+    <article className="flex flex-col overflow-hidden rounded-xl border border-sage bg-paper">
+      <div className="flex min-h-[305px] items-center justify-center border-b border-sage/40 bg-paper p-8">
+        <div className="w-[176px]">
+          <BookCover image={image} status={status} title={title} />
+        </div>
+      </div>
+
+      <div className="flex flex-1 flex-col items-center p-6 text-center">
+        <h3 className="font-serif text-xl leading-8">{title}</h3>
+        <div className="mt-6">
+          <ButtonLink href={cta.href}>{cta.label}</ButtonLink>
+        </div>
       </div>
     </article>
   )

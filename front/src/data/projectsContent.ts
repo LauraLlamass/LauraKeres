@@ -1,22 +1,32 @@
-export const projectsHeader = {
-  title: 'Lorem ipsum dolor',
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sapien sed lorem gravida malesuada.',
-}
-
 export const projects = [
   {
-    eyebrow: 'Saga en construcción',
+    eyebrow: 'Saga de fantasía',
     title: 'Ithesia',
     description:
-      'Un continente bajo el mandato de una Emperatriz. Una princesia con una herencia desconocida.',
+      'Un continente bajo el mandato de una Emperatriz. Una princesa con una herencia desconocida.',
     cta: {
-      label: 'Entrar en Ithesia',
+      label: 'Descubrir Ithesia',
       href: '/proyectos/ithesia',
     },
     cover: {
-      eyebrow: 'Proyecto Ithesia',
-      title: 'La hija del eco',
+      title: 'Saga Ithesia',
       author: 'Laura Keres',
+    },
+  },
+  {
+    eyebrow: 'Autoconclusivo · 2025',
+    title: 'Las formas del fuego',
+    description:
+      'Ocho relatos donde lo fantástico y lo íntimo se entrelazan para explorar el deseo, la pérdida, el duelo y la memoria.',
+    cta: {
+      label: 'Descubrir Las formas del fuego',
+      href: '/proyectos/relatos',
+    },
+    cover: {
+      eyebrow: 'Libro de relatos',
+      title: 'Las formas del fuego',
+      author: 'Laura Keres',
+      image: '/LFDF-Keres.png',
     },
   },
 ]

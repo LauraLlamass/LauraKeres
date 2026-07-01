@@ -1,7 +1,7 @@
 import ButtonLink from '../ButtonLink'
-import ImageBlock from './ImageBlock'
+import FramedImage from './FramedImage'
 
-type HelpSectionProps = {
+type IthesiaIntroSectionProps = {
   cta: {
     href: string
     label: string
@@ -13,16 +13,16 @@ type HelpSectionProps = {
   title: string
 }
 
-function HelpSection({
+function IthesiaIntroSection({
   cta,
   imageAlt,
   imageSrc,
   text,
   title,
-}: HelpSectionProps) {
+}: IthesiaIntroSectionProps) {
   return (
     <section className="mx-auto grid w-[min(1120px,100%)] grid-cols-[minmax(320px,0.88fr)_minmax(0,1fr)] items-center gap-20 px-6 py-28 max-[820px]:flex max-[820px]:flex-col max-[820px]:items-stretch max-[820px]:gap-8 max-[540px]:p-6">
-      <ImageBlock alt={imageAlt} src={imageSrc} />
+      <FramedImage alt={imageAlt} src={imageSrc} />
 
       <div>
         <h2 className="font-serif text-4xl leading-none max-[540px]:text-4xl">
@@ -39,4 +39,4 @@ function HelpSection({
   )
 }
 
-export default HelpSection
+export default IthesiaIntroSection

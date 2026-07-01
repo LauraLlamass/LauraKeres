@@ -3,10 +3,10 @@ export const workingImage = '/trabajando.jpg'
 export const heroContent = {
   eyebrow: 'Escritora',
   title: 'Laura Keres',
-  text: 'Espacio provisional para presentar la obra, el tono y el universo creativo de Laura cuando esten definidos los textos finales.',
+  text: 'Escribo historias donde la fantasía, la memoria y las emociones abren la puerta a otros mundos.',
   cta: {
-    label: 'Entrar a Ithesia',
-    href: '#contacto',
+    label: 'Descubrir Ithesia',
+    href: '/proyectos/ithesia',
   },
   tags: ['Escritora', 'Programadora', 'Ilustracion'],
 }
@@ -22,8 +22,8 @@ export const helpContent = {
   title: 'De la emoción a un reino',
   text: 'Descubre los cinco reinos que componen Ithesia y mucho más',
   cta: {
-    label: 'Entrar en Ithesia',
-    href: '/proyectos',
+    label: 'Descubrir Ithesia',
+    href: '/proyectos/ithesia',
   },
 }
 

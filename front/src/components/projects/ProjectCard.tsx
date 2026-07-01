@@ -4,7 +4,8 @@ import ProjectCover from './ProjectCover'
 type ProjectCardProps = {
   cover: {
     author: string
-    eyebrow: string
+    eyebrow?: string
+    image?: string
     title: string
   }
   cta: {

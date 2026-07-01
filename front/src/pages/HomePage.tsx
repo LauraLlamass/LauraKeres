@@ -1,6 +1,6 @@
-import ContextSection from '../components/home/ContextSection'
-import HelpSection from '../components/home/HelpSection'
-import HeroSection from '../components/home/HeroSection'
+import QuoteSection from '../components/home/QuoteSection'
+import IthesiaIntroSection from '../components/home/IthesiaIntroSection'
+import HomeHero from '../components/home/HomeHero'
 import {
   contextContent,
   helpContent,
@@ -11,13 +11,13 @@ import {
 function HomePage() {
   return (
     <main className="w-full flex-1 p-0">
-      <HeroSection
+      <HomeHero
         {...heroContent}
         imageAlt="Laura trabajando en su estudio"
         imageSrc={workingImage}
       />
-      <ContextSection {...contextContent} />
-      <HelpSection
+      <QuoteSection {...contextContent} />
+      <IthesiaIntroSection
         {...helpContent}
         imageAlt="Proceso creativo de LauraKeres"
         imageSrc={workingImage}

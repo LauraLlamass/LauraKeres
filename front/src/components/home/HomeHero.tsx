@@ -1,7 +1,7 @@
 import ButtonLink from '../ButtonLink'
-import ImageBlock from './ImageBlock'
+import FramedImage from './FramedImage'
 
-type HeroSectionProps = {
+type HomeHeroProps = {
   eyebrow: string
   imageAlt: string
   imageSrc: string
@@ -14,17 +14,17 @@ type HeroSectionProps = {
   }
 }
 
-function HeroSection({
+function HomeHero({
   cta,
   imageAlt,
   imageSrc,
   text,
   title,
-}: HeroSectionProps) {
+}: HomeHeroProps) {
   return (
     <section className="bg-paper">
       <div className="mx-auto grid min-h-[690px] w-full max-w-6xl grid-cols-[0.78fr_1fr] items-center gap-14 px-6 py-12 max-[820px]:min-h-0 max-[820px]:grid-cols-1 max-[820px]:gap-10 max-[540px]:p-6">
-        <ImageBlock
+        <FramedImage
           alt={imageAlt}
           className="min-h-[580px] max-[820px]:min-h-[420px] max-[540px]:min-h-[280px]"
           src={imageSrc}
@@ -47,4 +47,4 @@ function HeroSection({
   )
 }
 
-export default HeroSection
+export default HomeHero
