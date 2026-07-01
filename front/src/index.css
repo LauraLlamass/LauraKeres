@@ -3,10 +3,10 @@
 
 :root {
   --paper: #fbf4e8;
-  --parchment: #f5e5be;
-  --sage: #527b53;
-  --services: #4d210d;
-  --leather: #2e4b2f;
+  --parchment: #d4dcca;
+  --sage: #768969;
+  --services: #632311;
+  --leather: #105631;
 
   font-family: 'Source Sans 3', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', sans-serif;
